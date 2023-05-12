@@ -1,0 +1,84 @@
+:root{
+    --Red: hsl(0, 100%, 68%);
+    --VeryDarkBlue: hsl(230, 29%, 20%);
+    --DarkGrayishBlue: hsl(230, 11%, 40%);
+    --GrayishBlue: hsl(231, 7%, 65%);
+    --GrayishBlue2: hsl(235, 65%, 97%);
+    --LightGrayishBlue: hsl(207, 33%, 95%);
+}
+
+body{
+    
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+.rectangle::after{
+
+    content: '';
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 40%;
+    background-color: var(--GrayishBlue2);
+    height: 70%;
+}
+
+
+.flex-card{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+}
+
+.hero-img img{
+    max-width: 100%;
+    min-width: 600px;
+    height: auto;
+    position: relative;
+    padding-bottom: 6em;
+   
+}
+
+.container{
+    border: 2px solid red;
+    
+}
+
+.heading span{
+    width: 50px;
+    background-color: var(--VeryDarkBlue);
+    color: var(--LightGrayishBlue);
+    padding: 2px 6px;
+    border-radius: 20px;
+}
+
+.heading p{
+   color: var(--GrayishBlue);
+}
+
+.container h1{
+    color: var(--VeryDarkBlue);
+}
+
+.heading, h1{
+    text-transform: uppercase;
+}
+
+.links a{
+    text-decoration: none;
+    width: 80px;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--Red);
+    color: var(--LightGrayishBlue);
+   
+}
+
+ a:nth-child(2){
+    background-color: white;
+    color: var(--GrayishBlue);
+ }
